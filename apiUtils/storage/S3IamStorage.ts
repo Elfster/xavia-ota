@@ -21,6 +21,8 @@ export class S3IamStorage implements StorageInterface {
       region: process.env.S3_REGION ?? 'auto',
       endpoint: process.env.S3_ENDPOINT,
     };
+    // If the credentials are provided, use them
+    // This way of accessing AWS resources is not recommended for production use
     if (process.env.S3_ACCESS_KEY_ID && process.env.S3_SECRET_ACCESS_KEY) {
       config.credentials = {
         accessKeyId: process.env.S3_ACCESS_KEY_ID,
