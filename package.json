@@ -21,7 +21,7 @@
     "@google-cloud/storage": "^7.15.2",
     "@supabase/supabase-js": "^2.46.1",
     "adm-zip": "^0.5.16",
-    "form-data": "^4.0.0",
+    "form-data": "^4.0.6",
     "formidable": "^3.5.2",
     "framer-motion": "^11.11.17",
     "mime": "^2.5.2",
